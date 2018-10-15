@@ -37,6 +37,8 @@ class AppAsset extends AssetBundle
         'js/move-top.js',
         'js/simplyCountdown.js',
         'js/SmoothScroll.min.js',
+        'js/vue.js',
+        'js/vue_main.js',
         'js/main.js',
     ];
     public $depends = [

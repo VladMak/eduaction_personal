@@ -12,8 +12,8 @@ use yii\helpers\Url;
          </h3>
        </div>
        <h3 class="txt-w3_agile mb-3">Тихоновой Екатерины Кондратьевны</h3>
-       <a href="course.html" class="mr-2"><i class="fas fa-graduation-cap"></i> Наши курсы</a>
-       <a href="about.html"><i class="fas fa-book"></i> Читать еще</a>
+       <a href="course.html" class="mr-2"><i class="fas fa-graduation-cap"></i> Портфолио</a>
+       <a href="about.html"><i class="fas fa-book"></i> Обо мне</a>
      </div>
      <!-- To bottom button-->
      <div class="thim-click-to-bottom">

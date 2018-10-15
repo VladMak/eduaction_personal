@@ -127,21 +127,6 @@ $template = Template::find()->all();
                     <p><i class="fas fa-envelope-open"></i> <a href="mailto:<?php echo $template[0]['email']; ?>"><?php echo $template[0]['email']; ?></a></p>
                 </address>
             </div>
-            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-sm-0 mt-4 p-md-0">
-                <h3 class="text-uppercase mb-3">О нас</h3>
-                <div class="links">
-                    <a class="text-capitalize" href="<?php echo Url::to(['site/why']); ?>"> Почему мы</a>
-                    <a class="pt-2 text-capitalize" href="<?php echo Url::to(['site/doc']); ?>site/doc"> Документы</a>
-                    <a class="pt-2 text-capitalize" href="<?php echo Url::to(['site/tech']); ?>site/tech"> Тех. поддержка</a>
-                </div>  
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 mt-lg-0 mt-sm-5 mt-4 p-md-0">
-                <h3 class="text-uppercase mb-3">Поддержка</h3>
-                <div class="links">
-                    <a class="text-capitalize" href="<?php echo Url::to(['site/contact']); ?>"> Свяжитесь с нами</a>
-                    <a class="pt-2 text-capitalize" href="<?php echo Url::to(['site/policy']); ?>"> Политика приватности</a>
-                </div>  
-            </div>
             <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
                 <h3 class="text-uppercase mb-3"> Я в соц. сетях</h3>
                 <ul class="social mt-lg-0 mt-3">

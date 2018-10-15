@@ -2022,3 +2022,9 @@ address p a:hover {
 .carousel-item{
     padding: 0 40px 0 40px;
 }
+
+.image1{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 100%;
+}
