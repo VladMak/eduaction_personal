@@ -15,15 +15,6 @@ use yii\helpers\Url;
        <a href="course.html" class="mr-2"><i class="fas fa-graduation-cap"></i> Портфолио</a>
        <a href="about.html"><i class="fas fa-book"></i> Обо мне</a>
      </div>
-     <!-- To bottom button-->
-     <div class="thim-click-to-bottom">
-      <div class="rotate">
-        <a href="<?php echo Url::to(['site/index']); ?>welcome" class="scroll">
-          <i class="fas fa-angle-double-down"></i>
-        </a>
-      </div>
-    </div>
-    <!-- //To bottom button-->
 
   </div>
 </div>
@@ -50,65 +41,59 @@ use yii\helpers\Url;
 <section class="welcome py-5" id="welcome">
   <div class="container py-sm-3">
     <div class="row welcome-grids">
-      <div class="col-lg-4 mb-lg-0 mb-5">
-        <div class="image1 mb-4">
+      <div class="col-lg-4 mb-lg-0 mb-5 vut">
+        <div class="image1 mb-4 for_pupil">
           <h4>Ученикам</h4>
-          <p class="mt-3"><a href="<?php echo Url::to(['pupil/index', 'id' => 0]); ?>">Техника безопасности</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['pupil/index', 'id' => 1]); ?>">Проверь себя</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['pupil/index', 'id' => 2]); ?>">Наши достижения</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['pupil/index', 'id' => 3]); ?>">Фильмы о спорте</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['pupil/index', 'id' => 4]); ?>">Интересные факты из мира спорта</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['pupil/index', 'id' => 5]); ?>">Расписание</a></p>
-          <span class="fa fa-cog" aria-hidden="true"></span>
+          <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Техника безопасности']); ?>">Техника безопасности</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Проверь себя']); ?>">Проверь себя</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Наши достижения']); ?>">Наши достижения</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['pupil/films', 'id' => 3]); ?>">Фильмы о спорте</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Интересные факты из мира спорта']); ?>">Интересные факты из мира спорта</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['table/table', 'id' => 5]); ?>">Расписание</a></p>
+          <span class="fas fa-graduation-cap" aria-hidden="true"></span>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <div class="image1 mb-4">
+        <div class="image1 mb-4 for_parent">
           <h4>Родителям</h4>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 0]); ?>">Классный руководитель</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 1]); ?>">Дни рождения</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 2]); ?>">Расписания</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 3]); ?>">Новости класса</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 4]); ?>">Портфолио класса</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 5]); ?>">Родительские собрания</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 6]); ?>">План работы</a></p>
-          <span class="fa fa-cog" aria-hidden="true"></span>
+          <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Классный руководитель']); ?>">Классный руководитель</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 'Классный руководитель']); ?>">Дни рождения</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['table/table', 'id' => 'Классный руководитель']); ?>">Расписания</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Новости класса']); ?>">Новости класса</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио класса']); ?>">Портфолио класса</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Родительские собрания']); ?>">Родительские собрания</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'План работы']); ?>">План работы</a></p>
+          <span class="fas fa-school" aria-hidden="true"></span>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 mt-md-0 mt-4">
-        <div class="image1 mb-4">
+        <div class="image1 mb-4 for_teacher">
           <h4>Педагогам</h4>
-          <p class="mt-3"><a href="<?php echo Url::to(['teacher/index', 'id' => 0]); ?>">Уроки</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['teacher/index', 'id' => 1]); ?>">Внеклассная работа</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['teacher/index', 'id' => 2]); ?>">ФГОС материалы</a></p>
-          <span class="fab fa-accusoft"></span>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Уроки']); ?>">Уроки</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Внеклассная работа']); ?>">Внеклассная работа</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'ФГОС материалы']); ?>">ФГОС материалы</a></p>
+          <span class="fas fa-chalkboard-teacher"></span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+<section class="slider_mavl">
+  <center><h2>Фото с работы</h2></center>
+  <div class="owl-carousel owl-theme">
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
+    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
   </div>
 </section>
 
@@ -124,7 +109,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -133,7 +118,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -142,7 +127,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -152,7 +137,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -161,7 +146,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -170,7 +155,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -180,7 +165,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -189,7 +174,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>
@@ -198,7 +183,7 @@ use yii\helpers\Url;
             <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
             <div class="card-body">
               <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-              
+
             </div>
           </div>
         </div>

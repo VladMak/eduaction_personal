@@ -26,6 +26,7 @@ class AppAsset extends AssetBundle
         'css/jquery.countdown.css',
         'css/site.css',
         'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
+        'css/owl.carousel.min.css'
     ];
     public $js = [
         'js/jquery-2.1.4.min.js',
@@ -38,6 +39,7 @@ class AppAsset extends AssetBundle
         'js/simplyCountdown.js',
         'js/SmoothScroll.min.js',
         'js/vue.js',
+        'js/owl.carousel.min.js',
         'js/vue_main.js',
         'js/main.js',
     ];

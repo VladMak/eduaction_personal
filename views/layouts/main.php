@@ -74,30 +74,13 @@ $template = Template::find()->all();
                         <a class="nav-link" href="<?php echo Url::to(['site/index']); ?>">Главная</a>
                     </li>
                     <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="<?php echo Url::to(['site/portfolio']); ?>">Портфолио</a>
+                        <a class="nav-link" href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио']); ?>">Портфолио</a>
                     </li>
                     <li class="nav-item mr-lg-3">
                         <a class="nav-link" href="<?php echo Url::to(['site/photo']); ?>">Фото</a>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link" href="<?php echo Url::to(['site/gto']); ?>">ГТО</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="<?php echo Url::to(['site/npb']); ?>">НПБ</a>
-                    </li>
-                    <li class="dropdown nav-item mr-lg-3">
-                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle ">
-                            Еще
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="nav-item">
-                                <a href="<?php echo Url::to(['site/classruk']); ?>" class="nav-link">Классный руководитель</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="<?php echo Url::to(['site/vneklrab']); ?>" class="nav-link">Внеклассная работа</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -134,6 +117,26 @@ $template = Template::find()->all();
                     <li class="mr-1"><a href="#"><span class="fab fa-twitter"></span></a></li>
                     <li class="mr-1"><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
                     <li class="mr-1"><a href="#"><span class="fab fa-vk"></span></a></li></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                <h3 class="text-uppercase mb-3"> Ссылки на связанные ресурсы</h3>
+                <ul class="link_to_other_res mt-lg-0 mt-3">
+                    <p>
+                        <a href="http://ustkudaschool.ru/">МОУ ИРМО Усть-Кудинская СОШ</a>
+                    </p>
+                    <p>
+                        <a href="https://dnevnik.ru/"><img style="width: 150px" src="https://static.dnevnik.ru/img/logotypes/logotype.png"></a>
+                    </p>
+                    <p>
+                        <a href="http://www.iro38.ru/"><img style="width: 300px" src="http://www.iro38.ru/templates/shablon/images/logotext.png"></a>
+                    </p>
+                    <p>
+                        <a href="https://www.gto.ru/">
+                            <img style="width: 100px;" src="https://www.gto.ru/bundles/gtofront/img/logo-h4.png">
+                        </a>
+                    </p>
                 </ul>
             </div>
         </div>

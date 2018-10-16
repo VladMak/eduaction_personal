@@ -5,13 +5,9 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use app\models\ParentContent;
+use app\models\ParentArticle;
+use app\models\ArticleModel;
 
-/**
- * LoginForm is the model behind the login form.
- *
- * @property User|null $user This property is read-only.
- *
- */
 class ParentModel extends Model
 {
     public function getName($id = 0){
@@ -32,5 +28,26 @@ class ParentModel extends Model
                 return $page[$i];
             }
         }
+    }
+
+    public function getArticle($name, $page){
+        $model = ParentArticle::find()->where(['who' => $name])->all();
+        $new_model = [];
+        if(count($model) > 10){
+            for($i = ($page + 1) * 10 - 10; $i < ($page + 1) * 10; $i++){
+                if(isset($model[$i])){
+                    array_push($new_model, $model[$i]);
+                }
+            }
+        }else{
+            $new_model = $model;
+        }
+        return $new_model;
+    }
+
+    public function getSingleArticle($id, $who){
+        $model = ParentArticle::find()->where(['who' => $who, 'id' => $id])->all();
+        
+        return $model;
     }
 }

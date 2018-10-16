@@ -5,6 +5,7 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use app\models\PupilContent;
+use app\models\PupilArticle;
 
 /**
  * LoginForm is the model behind the login form.
@@ -32,5 +33,26 @@ class PupilModel extends Model
                 return $page[$i];
             }
         }
+    }
+
+    public function getArticle($name, $page){
+        $model = PupilArticle::find()->where(['who' => $name])->all();
+        $new_model = [];
+        if(count($model) > 10){
+            for($i = ($page + 1) * 10 - 10; $i < ($page + 1) * 10; $i++){
+                if(isset($model[$i])){
+                    array_push($new_model, $model[$i]);
+                }
+            }
+        }else{
+            $new_model = $model;
+        }
+        return $new_model;
+    }
+
+    public function getSingleArticle($id, $who){
+        $model = PupilArticle::find()->where(['who' => $who, 'id' => $id])->all();
+        
+        return $model;
     }
 }

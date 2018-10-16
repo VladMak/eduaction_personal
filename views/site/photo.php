@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 ?>
 <!-- inner banner -->
@@ -18,24 +19,66 @@ use yii\helpers\Html;
 <!-- //inner banner -->
 
 
-<!-- about -->
-<section class="about py-5">
-	<div class="container py-sm-3">
-		<h3 class="heading text-capitalize mb-lg-5 mb-4"> History - <span> About Our University</span> </h3>
-		<div class="row about-grids">
-			<div class="col-lg-6">
-				<h4>History of our University</h4>
-				<p class="mb-3">Sed gravida dignissim magna idesn molestie. Nulla congue, ex init dictu lacinia, nislen est posuere nulla,
-					nec egestas leo mi id lorem. Maecenas sem nulla. Maecenas risus enim, pharetra accumsan nulla vitae, mollis hendrerit orci.
-					Pellentesque nec purus eu tortor molestie fringilla ut sit amet mauris. Maecenas mattis eleifend lacus non condimentum. Elit
-				Donec fringilla nisi risus, at ullamcorper augue blandit sit amet.</p>
-				<p>Sed gravida dignissim magna idesn molestie. Nulla congue, ex init dictu lacinia, nislen est posuere nulla,
-				nec egestas leo mi id lorem.</p>
-			</div>
-			<div class="col-lg-6 mt-lg-0 mt-5">
-				<img src="images/history.jpg" alt="" class="img-fluid"/>
-			</div>
-		</div>
-	</div>
+<section>
+  <div class="album py-5 bg-light cont_news">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- //about -->

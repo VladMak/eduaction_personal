@@ -63,9 +63,8 @@ class SiteController extends Controller
     public function actionIndex()
     {
         /*
-        Сделать рамку у трех штук и цвета как на том сайте, который Валя скидывала(Напишем)
-        Текст ярче, слайдер сделать, чтобы сразу три фотки видно было, ну и поменьше размером
-        Добавить ссылки на сайт школы, и т.д.
+        Свежие новости: дату добавить
+        Новости еще должны раскрываться, попробовать через Vue
         */
         return $this->render('index');
     }
@@ -145,22 +144,28 @@ class SiteController extends Controller
         $id = 1;
         $name = $main_nav->getName($id);
         $content = $main_nav->getContent($id);
-        return $this->render('page', [
+        return $this->render('photo', [
             'name' => $name,
             'content' => $content,
         ]);
     }
 
+    /*
+    https://www.gto.ru/
+    Что такое ГТО
+    Что я должен уметь
+    Как статьи сделать
+    И ещё нормативы по ступеням
+    Вот все с этого сайта можно взять
+    Кстати этот сайт можно в ссылки затолкать)
+    */
     public function actionGto()
     {
         $main_nav = new SiteModel();
         $id = 2;
         $name = $main_nav->getName($id);
         $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
+        return $this->render('gto');
     }
 
     public function actionClassruk()

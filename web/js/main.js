@@ -98,3 +98,15 @@ jQuery(document).ready(function($){
 		}
 	}
 });
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    responsiveClass:true,
+    loop: true,
+    items: 3,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true
+})

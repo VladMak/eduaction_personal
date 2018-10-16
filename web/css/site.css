@@ -1058,13 +1058,13 @@ span.simply-word {
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 900;
-    color: #333;
+    color: #3075ae;
     margin-bottom: 10px;
     letter-spacing: 3px;
 }
 .about-grids p {
     font-size: 15px;
-    color: #888;
+    color: black;
     line-height: 28px;
 }
 /*-- //About page --*/
@@ -2024,7 +2024,107 @@ address p a:hover {
 }
 
 .image1{
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 5px solid rgba(0,0,0,0.2);
     border-radius: 5px;
     height: 100%;
+}
+
+.image1 a{
+    color: black;
+}
+
+.for_pupil:hover{
+    border: 5px solid #ebba39;
+}
+
+.for_pupil h4{
+    color: #ebba39;
+}
+
+.for_pupil a:hover{
+    color: #ebba39;
+}
+
+.for_parent:hover{
+    border: 5px solid #3075ae;
+}
+
+.for_parent h4{
+    color: #3075ae;
+}
+
+.for_parent a:hover{
+    color: #3075ae;
+}
+
+.for_teacher:hover{
+    border: 5px solid #52c690;
+}
+
+.for_teacher h4{
+    color: #52c690;
+}
+
+.for_teacher a:hover{
+    color: #52c690;
+}
+
+.slider_mavl{
+    padding: 20px;
+    background-color: #222222;
+}
+
+.slider_mavl h2{
+    padding: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.slider_mavl img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.link_to_other_res a{
+    color: #777;
+}
+
+.link_to_other_res a:hover{
+    color: white;
+}
+
+.link_to_other_res img{
+    width: 200px;
+}
+
+.mavl_article{
+    padding: 30px;
+    background: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.mavl_read_more{
+    padding: 20px;
+    border: 5px solid #3075ae;
+    color: #3075ae;
+}
+
+.mavl_read_more_div{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.but_next_prev{
+    text-align: right;
+}
+
+.gto{
+    color: #222 !important;
+    text-decoration: underline;
+    font-weight: 900 !important;
+    font-family: sans-serif;
+}
+
+.mavl_article div{
+    margin-bottom: 20px;
 }
