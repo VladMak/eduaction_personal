@@ -92,35 +92,22 @@ use yii\helpers\Url;
 
 			<div class="row">
 
-
+				<?php
+				for($i = 2; $i < count($photos); $i++) {
+				?>
 				<div class="col-sm-6 col-md-4">
 					<div class="thumbnail">
-						<a class="lightbox" href="/models/web/category/single?uri=projects&amp;id=0-3+%D0%BB%D0%B5%D1%82">
-							<img src="/models/web/img/starkids/projects/0-3 лет/10_яна_ахметова.jpg" alt="Park">
+						<a class="lightbox" href="#">
+							<img style="image-orientation: from-image;" src="<?php echo Url::base() . '/' . $path . '/' . $photos[$i];  ?>" alt="Park">
+							<?php
+							echo exif_imagetype(Url::base() . '/' . $path . '/' . $photos[$i]);
+							?>
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail">
-						<a class="lightbox" href="/models/web/category/single?uri=projects&amp;id=3-5+%D0%BB%D0%B5%D1%82">
-							<img src="/models/web/img/starkids/projects/3-5 лет/14 адель балашова.jpg" alt="Park">
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail">
-						<a class="lightbox" href="/models/web/category/single?uri=projects&amp;id=6-8+%D0%BB%D0%B5%D1%82">
-							<img src="/models/web/img/starkids/projects/6-8 лет/33 алина еншина.jpg" alt="Park">
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail">
-						<a class="lightbox" href="/models/web/category/single?uri=projects&amp;id=9-11">
-							<img src="/models/web/img/starkids/projects/9-11/43 юлия овечкина.jpg" alt="Park">
-						</a>
-					</div>
-				</div>
+				<?php
+				}
+				?>
 
 
 			</div>

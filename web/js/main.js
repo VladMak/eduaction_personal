@@ -109,4 +109,10 @@ $('.owl-carousel').owlCarousel({
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true
-})
+});
+
+$('img').click(function(){
+	console.log($('#exampleModalLong img'));
+	$('#exampleModalLong').modal('show');
+	$('#exampleModalLong img')[0].src = this.src;
+});

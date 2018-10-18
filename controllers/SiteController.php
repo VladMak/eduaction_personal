@@ -10,6 +10,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\SiteModel;
+use yii\helpers\Url;
+use app\models\PortfolioModel;
 
 class SiteController extends Controller
 {
@@ -249,6 +251,18 @@ class SiteController extends Controller
         return $this->render('page', [
             'name' => $name,
             'content' => $content,
+        ]);
+    }
+
+    public function actionAbout($name){
+        $model = new PortfolioModel();
+        list($photos, $path) = $model->getPhoto($name);
+        $content = 'Равным образом реализация намеченных плановых заданий представляет собой интересный эксперимент проверки систем массового участия. Равным образом дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. ';
+        $img = Url::base().'/' . 'images/img/01.jpg';
+        return $this->render('about', [
+            'name' => 'Обо мне',
+            'content' => $content,
+            'img' => $img,
         ]);
     }
 }

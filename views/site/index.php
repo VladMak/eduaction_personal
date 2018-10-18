@@ -12,8 +12,8 @@ use yii\helpers\Url;
          </h3>
        </div>
        <h3 class="txt-w3_agile mb-3">Тихоновой Екатерины Кондратьевны</h3>
-       <a href="course.html" class="mr-2"><i class="fas fa-graduation-cap"></i> Портфолио</a>
-       <a href="about.html"><i class="fas fa-book"></i> Обо мне</a>
+       <a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио']); ?>" class="mr-2"><i class="fas fa-graduation-cap"></i> Портфолио</a>
+       <a href="<?php echo Url::to(['site/about', 'name' => 'Обо мне']); ?>"><i class="fas fa-book"></i> Обо мне</a>
      </div>
 
   </div>
@@ -33,6 +33,7 @@ use yii\helpers\Url;
       <div class="col-lg-6 mt-lg-0 mt-5">
         <img class="img-fluid main_page_img" src="<?php echo Url::base().'/'; ?>images/img/01.jpg" alt="" class="img-fluid">
       </div>
+      <a class="mavl_read_more" href="<?php echo Url::to(['site/about', 'name' => 'Обо мне']); ?>">Читать еще</a>
     </div>
   </div>
 </section>
@@ -58,7 +59,6 @@ use yii\helpers\Url;
           <h4>Родителям</h4>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Классный руководитель']); ?>">Классный руководитель</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 'Классный руководитель']); ?>">Дни рождения</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['table/table', 'id' => 'Классный руководитель']); ?>">Расписания</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Новости класса']); ?>">Новости класса</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио класса']); ?>">Портфолио класса</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Родительские собрания']); ?>">Родительские собрания</a></p>

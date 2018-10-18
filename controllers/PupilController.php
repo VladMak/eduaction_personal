@@ -45,12 +45,6 @@ class PupilController extends Controller
 
     public function actionFilms($id)
     {
-        $model = new PupilModel();
-        $name = $model->getName($id);
-        $content = $model->getContent($id);
-        return $this->render('index', [
-            'name' => $name,
-            'content' => $content
-        ]);
+        return $this->render('films');
     }
 }

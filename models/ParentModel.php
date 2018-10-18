@@ -6,7 +6,6 @@ use Yii;
 use yii\base\Model;
 use app\models\ParentContent;
 use app\models\ParentArticle;
-use app\models\ArticleModel;
 
 class ParentModel extends Model
 {

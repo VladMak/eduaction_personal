@@ -2128,3 +2128,35 @@ address p a:hover {
 .mavl_article div{
     margin-bottom: 20px;
 }
+
+.fa-file-pdf{
+    color: rgba(0,0,0,0.3);
+}
+
+/*.fa-file-pdf::before{
+    width: 100px;
+}*/
+
+.card-body i{
+    font-size: 30px;
+}
+
+.card-body{
+    margin: 0 !important;
+}
+
+.raspisanie{
+    text-align: center;
+}
+
+.raspisanie, .col-md-4{
+    margin-bottom: 20px;
+}
+
+.raspisanie p{
+    text-align: left;
+}
+
+img{
+    cursor: pointer !important;
+}

@@ -304,14 +304,14 @@ use yii\helpers\Url;
 										<div class="card-header" id="headingOne">
 											<h5 class="mb-0">
 												<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													1 Ступень
+													1 ступень — Нормы ГТО для школьников 6-8 лет
 												</button>
 											</h5>
 										</div>
 
 										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_01_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
@@ -319,13 +319,13 @@ use yii\helpers\Url;
 										<div class="card-header" id="headingTwo">
 											<h5 class="mb-0">
 												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													2 Ступень
+													2 ступень — Нормы ГТО для школьников 9-10 лет
 												</button>
 											</h5>
 										</div>
 										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_02_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
@@ -333,43 +333,43 @@ use yii\helpers\Url;
 										<div class="card-header" id="headingThree">
 											<h5 class="mb-0">
 												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													3 Ступень
+													3 ступень — Нормы ГТО для школьников 11-12 лет
 												</button>
 											</h5>
 										</div>
 										<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_03_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 
 									<div class="card">
-										<div class="card-header" id="headingThree">
+										<div class="card-header" id="headingFour">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-													4 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+													4 ступень — Нормы ГТО для школьников 13-15 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_04_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 
 									<div class="card">
-										<div class="card-header" id="headingThree">
+										<div class="card-header" id="headingFiver">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-													5 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+													5 ступень — Нормы ГТО для школьников 16-17 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div id="collapseFive" class="collapse" aria-labelledby="headingFiver" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_05_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
@@ -378,75 +378,89 @@ use yii\helpers\Url;
 							<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 								<div class="accordion" id="accordionExample">
 									<div class="card">
-										<div class="card-header" id="headingOne">
+										<div class="card-header" id="headingSixMan">
 											<h5 class="mb-0">
-												<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													1 Ступень
+												<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSixMan" aria-expanded="true" aria-controls="collapseSixMan">
+													6 ступень — Нормы ГТО для мужчин 18-29 лет
 												</button>
 											</h5>
 										</div>
 
-										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div id="collapseSixMan" class="collapse show" aria-labelledby="headingSixMan" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_06_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="card-header" id="headingTwo">
+										<div class="card-header" id="headingSevenMan">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													2 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSevenMan" aria-expanded="false" aria-controls="collapseSevenMan">
+													7 ступень — Нормы ГТО для мужчин 30-39 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div id="collapseSevenMan" class="collapse" aria-labelledby="headingSevenMan" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_07_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="card-header" id="headingThree">
+										<div class="card-header" id="headingAteMan">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													3 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseAteMan" aria-expanded="false" aria-controls="collapseAteMan">
+													8 ступень — Нормы ГТО для мужчин 40-49 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div id="collapseAteMan" class="collapse" aria-labelledby="headingAteMan" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-											</div>
-										</div>
-									</div>
-
-									<div class="card">
-										<div class="card-header" id="headingThree">
-											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-													4 Ступень
-												</button>
-											</h5>
-										</div>
-										<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_08_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 
 									<div class="card">
-										<div class="card-header" id="headingThree">
+										<div class="card-header" id="headingNineMan">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-													5 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNineMan" aria-expanded="false" aria-controls="collapseNineMan">
+													9 ступень — Нормы ГТО для мужчин 50-59 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div id="collapseNineMan" class="collapse" aria-labelledby="headingNineMan" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_09_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="card-header" id="headingTenMan">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTenMan" aria-expanded="false" aria-controls="collapseTenMan">
+													10 ступень — Нормы ГТО для мужчин 60-69 лет
+												</button>
+											</h5>
+										</div>
+										<div id="collapseTenMan" class="collapse" aria-labelledby="headingTenMan" data-parent="#accordionExample">
+											<div class="card-body">
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_10_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingElevenMan">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseElevenMan" aria-expanded="false" aria-controls="collapseElevenMan">
+													11 ступень — Нормы ГТО для мужчин 70 лет и старше
+												</button>
+											</h5>
+										</div>
+										<div id="collapseElevenMan" class="collapse" aria-labelledby="headingElevenMan" data-parent="#accordionExample">
+											<div class="card-body">
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_11_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
@@ -455,75 +469,90 @@ use yii\helpers\Url;
 							<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 								<div class="accordion" id="accordionExample">
 									<div class="card">
-										<div class="card-header" id="headingOne">
+										<div class="card-header" id="headingSixWoman">
 											<h5 class="mb-0">
-												<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													1 Ступень
+												<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSixWoman" aria-expanded="true" aria-controls="collapseSixWoman">
+													6 ступень — Нормы ГТО для женщин 18-29 лет
 												</button>
 											</h5>
 										</div>
 
-										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div id="collapseSixWoman" class="collapse show" aria-labelledby="headingSixWoman" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_06_ru_17_wom.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="card-header" id="headingTwo">
+										<div class="card-header" id="headingSevenWoman">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													2 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSevenWoman" aria-expanded="false" aria-controls="collapseSevenWoman">
+													7 ступень — Нормы ГТО для женщин 30-39 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div id="collapseSevenWoman" class="collapse" aria-labelledby="headingSevenWoman" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_07_ru_17_wom.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="card-header" id="headingThree">
+										<div class="card-header" id="headingAteWoman">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													3 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseAteWoman" aria-expanded="false" aria-controls="collapseAteWoman">
+													8 ступень — Нормы ГТО для женщин 40-49 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div id="collapseAteWoman" class="collapse" aria-labelledby="headingAteWoman" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-											</div>
-										</div>
-									</div>
-
-									<div class="card">
-										<div class="card-header" id="headingThree">
-											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-													4 Ступень
-												</button>
-											</h5>
-										</div>
-										<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_08_ru_17_wom.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>
 
 									<div class="card">
-										<div class="card-header" id="headingThree">
+										<div class="card-header" id="headingNineWoman">
 											<h5 class="mb-0">
-												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-													5 Ступень
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNineWoman" aria-expanded="false" aria-controls="collapseNineWoman">
+													9 ступень — Нормы ГТО для женщин 50-59 лет
 												</button>
 											</h5>
 										</div>
-										<div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div id="collapseNineWoman" class="collapse" aria-labelledby="headingNineWoman" data-parent="#accordionExample">
 											<div class="card-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_09_ru_17_wom.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="card-header" id="headingTenWoman">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTenWoman" aria-expanded="false" aria-controls="collapseTenWoman">
+													10 ступень — Нормы ГТО для женщин 60-69 лет
+												</button>
+											</h5>
+										</div>
+										<div id="collapseTenWoman" class="collapse" aria-labelledby="headingTenWoman" data-parent="#accordionExample">
+											<div class="card-body">
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_10_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="card-header" id="headingElevenWoman">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseElevenWoman" aria-expanded="false" aria-controls="collapseElevenWoman">
+													11 ступень — Нормы ГТО для женщин 70 лет и старше
+												</button>
+											</h5>
+										</div>
+										<div id="collapseElevenWoman" class="collapse" aria-labelledby="headingElevenWoman" data-parent="#accordionExample">
+											<div class="card-body">
+												<a target="_blank" href="http://gto.ru/bundles/gtofront/img/norms/gto_norm_11_ru_17.pdf?17052213"><i class="fas fa-file-pdf"></i></a>
 											</div>
 										</div>
 									</div>

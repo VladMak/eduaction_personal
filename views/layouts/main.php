@@ -11,7 +11,7 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Валин сайт</title>
+    <title>Валин сайт</title>
     
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,9 +48,9 @@ $template = Template::find()->all();
         <section class="row top_header pt-3">
             <div class="col-lg-6">
             </div>
-                <div class="col-lg-6 buttons">
-                    <p><i class="fas mr-1 fa-phone"></i> <?php echo $template[0]['phone']; ?></p>
-                </div>
+            <div class="col-lg-6 buttons">
+                <p><i class="fas mr-1 fa-phone"></i> <?php echo $template[0]['phone']; ?></p>
+            </div>
         </section>
         <!-- top header -->
 
@@ -64,30 +64,30 @@ $template = Template::find()->all();
             </h1>
             <!-- //logo -->
             <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- main nav -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-lg-auto text-center">
-                    <li class="nav-item  mr-lg-3">
-                        <a class="nav-link" href="<?php echo Url::to(['site/index']); ?>">Главная</a>
-                    </li>
-                    <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио']); ?>">Портфолио</a>
-                    </li>
-                    <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="<?php echo Url::to(['site/photo']); ?>">Фото</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="<?php echo Url::to(['site/gto']); ?>">ГТО</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- //main nav -->
-        </nav>
-        <!-- //nav -->
-    </div>
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- main nav -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto text-center">
+                <li class="nav-item  mr-lg-3">
+                    <a class="nav-link" href="<?php echo Url::to(['site/index']); ?>">Главная</a>
+                </li>
+                <li class="nav-item mr-lg-3">
+                    <a class="nav-link" href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио']); ?>">Портфолио</a>
+                </li>
+                <li class="nav-item mr-lg-3">
+                    <a class="nav-link" href="<?php echo Url::to(['site/photo']); ?>">Фото</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="<?php echo Url::to(['site/gto']); ?>">ГТО</a>
+                </li>
+            </ul>
+        </div>
+        <!-- //main nav -->
+    </nav>
+    <!-- //nav -->
+</div>
 </header>
 <!-- //header -->
 
@@ -140,6 +140,40 @@ $template = Template::find()->all();
                 </ul>
             </div>
         </div>
+
+        <div class="row footer-gap">
+            <div class="col-lg-4 col-sm-6">
+                <h3 class="text-uppercase mb-3">Ученикам</h3>
+                <address class="mb-0">
+                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Техника безопасности']); ?>">Техника безопасности</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Проверь себя']); ?>">Проверь себя</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Наши достижения']); ?>">Наши достижения</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/films', 'id' => 3]); ?>">Фильмы о спорте</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Интересные факты из мира спорта']); ?>">Интересные факты из мира спорта</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['table/table', 'id' => 5]); ?>">Расписание</a></p>
+                </address>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                <h3 class="text-uppercase mb-3">Родителям</h3>
+                <address class="mb-0">
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Классный руководитель']); ?>">Классный руководитель</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 'Классный руководитель']); ?>">Дни рождения</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Новости класса']); ?>">Новости класса</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио класса']); ?>">Портфолио класса</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Родительские собрания']); ?>">Родительские собрания</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'План работы']); ?>">План работы</a></p>
+                </address>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                <h3 class="text-uppercase mb-3"> Педагогам</h3>
+                <address class="mb-0">
+                    <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Уроки']); ?>">Уроки</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Внеклассная работа']); ?>">Внеклассная работа</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'ФГОС материалы']); ?>">ФГОС материалы</a></p>
+                </address>
+            </div>
+        </div>
     </div>
     <div class="copyright pb-5 text-center">
         <p><?php echo $template[0]['copyright']; ?></p>
@@ -147,27 +181,37 @@ $template = Template::find()->all();
 </footer>
 <!-- footer -->
 
-    
-    <script>
-        $('#simply-countdown-losange').simplyCountdown({
-            year: 2020,
-            month: 1,
-            day: 06
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="" alt="test">
+    </div>
+</div>
+</div>
+</div>
+
+
+<script>
+    $('#simply-countdown-losange').simplyCountdown({
+        year: 2020,
+        month: 1,
+        day: 06
+    });
+</script>
+<!-- //Countdown-Timer-JavaScript -->
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
         });
-    </script>
-    <!-- //Countdown-Timer-JavaScript -->
-    
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){     
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-            });
-        });
-    </script>
-    <!-- here stars scrolling icon -->
-    <script type="text/javascript">
-        $(document).ready(function() {
+    });
+</script>
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
             /*
                 var defaults = {
                 containerID: 'toTop', // fading element id
@@ -175,15 +219,15 @@ $template = Template::find()->all();
                 scrollSpeed: 1200,
                 easingType: 'linear' 
                 };
-            */
-                                
-            $().UItoTop({ easingType: 'easeOutQuart' });
-                                
+                */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
             });
-    </script>
-    <!-- //here ends scrolling icon -->
-    <!-- start-smoth-scrolling -->
-<?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>
+        </script>
+        <!-- //here ends scrolling icon -->
+        <!-- start-smoth-scrolling -->
+        <?php $this->endBody() ?>
+    </body>
+    </html>
+    <?php $this->endPage() ?>
