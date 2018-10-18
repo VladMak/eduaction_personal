@@ -6,74 +6,6 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 ?>
-<style type="text/css">
-
-.gallery-container h1 {
-    text-align: center;
-    margin-top: 70px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
-    color: #58595a;
-}
-
-.gallery-container p.page-description {
-    text-align: center;
-    margin: 30px auto;
-    font-size: 18px;
-    color: #85878c;
-}
-
-.tz-gallery {
-    padding: 40px;
-}
-
-.tz-gallery .thumbnail {
-    padding: 0;
-    margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 4px;
-    border: none;
-    transition: 0.15s ease-in-out;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
-}
-
-.tz-gallery .thumbnail:hover {
-    transform: translateY(-10px) scale(1.02);
-}
-
-.tz-gallery .lightbox img {
-    border-radius: 4px 4px 0 0;
-    width: 100%;
-}
-
-.tz-gallery .caption{
-    padding: 26px 30px;
-    text-align: center;
-}
-
-.tz-gallery .caption h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 0;
-}
-
-.tz-gallery .caption p {
-    font-size: 12px;
-    color: #7b7d7d;
-    margin: 0;
-}
-
-.baguetteBox-button {
-    background-color: transparent !important;
-}
-
-.lightbox img{
-    height: 220px;
-    object-fit: cover;
-    object-position: top;
-}
-	
-</style>
 <!-- inner banner -->
 <div class="inner_banner layer" id="home">
 	<div class="container">
@@ -94,24 +26,25 @@ use yii\helpers\Url;
 
 				<?php
 				for($i = 2; $i < count($photos); $i++) {
-				?>
-				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail">
-						<a class="lightbox" href="#">
-							<img style="image-orientation: from-image;" src="<?php echo Url::base() . '/' . $path . '/' . $photos[$i];  ?>" alt="Park">
-							<?php
-							echo exif_imagetype(Url::base() . '/' . $path . '/' . $photos[$i]);
-							?>
-						</a>
-					</div>
-				</div>
-				<?php
-				}
-				?>
+                    ?>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a class="lightbox">
+                                <img style="image-orientation: from-image; object-fit: contain;" src="<?php echo Url::base() . '/' . $path . '/' . $photos[$i];  ?>" alt="Park">
+                            </a>
+                            <div class="caption">
+                                <h3>Название фото</h3>
+                                <p>18.10.2018</p>
+                            </div>
+                        </div>
+                 </div>
+                 <?php
+             }
+             ?>
 
 
-			</div>
+         </div>
 
-		</div>
-	</div>
+     </div>
+ </div>
 </section>

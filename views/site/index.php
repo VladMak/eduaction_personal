@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+
 ?>
 
 <section class="banner layer" id="home">
@@ -16,8 +17,8 @@ use yii\helpers\Url;
        <a href="<?php echo Url::to(['site/about', 'name' => 'Обо мне']); ?>"><i class="fas fa-book"></i> Обо мне</a>
      </div>
 
-  </div>
-</div>
+   </div>
+ </div>
 </section>
 <!-- //banner -->
 
@@ -46,7 +47,6 @@ use yii\helpers\Url;
         <div class="image1 mb-4 for_pupil">
           <h4>Ученикам</h4>
           <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Техника безопасности']); ?>">Техника безопасности</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Проверь себя']); ?>">Проверь себя</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Наши достижения']); ?>">Наши достижения</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['pupil/films', 'id' => 3]); ?>">Фильмы о спорте</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Интересные факты из мира спорта']); ?>">Интересные факты из мира спорта</a></p>
@@ -58,9 +58,9 @@ use yii\helpers\Url;
         <div class="image1 mb-4 for_parent">
           <h4>Родителям</h4>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Классный руководитель']); ?>">Классный руководитель</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 'Классный руководитель']); ?>">Дни рождения</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Новости класса']); ?>">Новости класса</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио класса']); ?>">Портфолио класса</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['parent/page', 'name' => 'Дни рождения']); ?>">Дни рождения</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Родительские собрания']); ?>">Родительские собрания</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'План работы']); ?>">План работы</a></p>
           <span class="fas fa-school" aria-hidden="true"></span>
@@ -69,9 +69,10 @@ use yii\helpers\Url;
       <div class="col-lg-4 col-sm-6 mt-md-0 mt-4">
         <div class="image1 mb-4 for_teacher">
           <h4>Педагогам</h4>
-          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Уроки']); ?>">Уроки</a></p>
           <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Внеклассная работа']); ?>">Внеклассная работа</a></p>
-          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'ФГОС материалы']); ?>">ФГОС материалы</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Методическая копилка']); ?>">Методическая копилка</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'МО']); ?>">МО</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Проекты']); ?>">Проекты</a></p>
           <span class="fas fa-chalkboard-teacher"></span>
         </div>
       </div>
@@ -82,18 +83,13 @@ use yii\helpers\Url;
 <section class="slider_mavl">
   <center><h2>Фото с работы</h2></center>
   <div class="owl-carousel owl-theme">
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" alt="First slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/03.jpg" alt="Second slide"></div>
-    <div class="item"><img class="d-block w-100" src="<?php echo Url::base().'/'; ?>images/img/04.jpg" alt="Third slide"></div>
+    <?php
+    for($i = 2; $i < count($slider); $i++){
+      ?>
+      <div class="item"><img class="d-block w-100" src="<?php echo $slider_path . '/' . $slider[$i]; ?>" alt="First slide"></div>
+      <?php
+    }
+    ?>
   </div>
 </section>
 
@@ -104,89 +100,36 @@ use yii\helpers\Url;
         <div class="fresh-news-title kids-title col-md-12"><h2 class="h2_main">Свежие новости</h2></div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
+        <?php
+        for($i = 0; $i < count($news); $i++) {
+          ?>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
+              <div class="card-body">
+                <p class="news_text_mavl">
+                  <?php echo $news[$i]['description']; ?>
+                </p>
+
+              </div>
+              <?php
+              if(isset($news[$i]['date'])){ ?>
+                <div class="card-footer">
+                  <p class="news_text_mavl">
+                    <?php echo $news[$i]['date']; ?>
+                  </p>
+
+                </div>
+              <?php }
+              ?>
 
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="<?php echo Url::base().'/'; ?>images/img/02.jpg" data-holder-rendered="true">
-            <div class="card-body">
-              <p class="news_text_mavl">Семейная фотосессия сегодня прошла у семи Фроловых.</p>
-
-            </div>
-          </div>
-        </div>
+          <?php
+        }
+        ?>
+        
+        
       </div>
     </div>
   </div>

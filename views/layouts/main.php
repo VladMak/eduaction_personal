@@ -101,6 +101,41 @@ $template = Template::find()->all();
 <footer>
     <div class="container-fluid p-sm-5 py-5">
         <div class="row footer-gap">
+            <div class="col-lg-4 col-sm-6">
+                <h3 class="text-uppercase mb-3">Ученикам</h3>
+                <address class="mb-0">
+                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Техника безопасности']); ?>">Техника безопасности</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Наши достижения']); ?>">Наши достижения</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/films', 'id' => 3]); ?>">Фильмы о спорте</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Интересные факты из мира спорта']); ?>">Интересные факты из мира спорта</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['table/table', 'id' => 5]); ?>">Расписание</a></p>
+                </address>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                <h3 class="text-uppercase mb-3">Родителям</h3>
+                <address class="mb-0">
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Классный руководитель']); ?>">Классный руководитель</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Новости класса']); ?>">Новости класса</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио класса']); ?>">Портфолио класса</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/page', 'name' => 'Дни рождения']); ?>">Дни рождения</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Родительские собрания']); ?>">Родительские собрания</a></p>
+                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'План работы']); ?>">План работы</a></p>
+                </address>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                <h3 class="text-uppercase mb-3"> Педагогам</h3>
+                <address class="mb-0">
+                    <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Внеклассная работа']); ?>">Внеклассная работа</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Методическая копилка']); ?>">Методическая копилка</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'МО']); ?>">МО</a></p>
+          <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Проекты']); ?>">Проекты</a></p>
+                </address>
+            </div>
+        </div>
+
+
+        <div class="row footer-gap">
             <div class="col-lg-3 col-sm-6">
                 <h3 class="text-uppercase mb-3">Адрес</h3>
                 <address class="mb-0">
@@ -121,7 +156,7 @@ $template = Template::find()->all();
             </div>
 
             <div class="col-lg-6 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
-                <h3 class="text-uppercase mb-3"> Ссылки на связанные ресурсы</h3>
+                <h3 class="text-uppercase mb-3"> Ссылки на полезные сайты</h3>
                 <ul class="link_to_other_res mt-lg-0 mt-3">
                     <p>
                         <a href="http://ustkudaschool.ru/">МОУ ИРМО Усть-Кудинская СОШ</a>
@@ -141,39 +176,6 @@ $template = Template::find()->all();
             </div>
         </div>
 
-        <div class="row footer-gap">
-            <div class="col-lg-4 col-sm-6">
-                <h3 class="text-uppercase mb-3">Ученикам</h3>
-                <address class="mb-0">
-                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Техника безопасности']); ?>">Техника безопасности</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Проверь себя']); ?>">Проверь себя</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Наши достижения']); ?>">Наши достижения</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/films', 'id' => 3]); ?>">Фильмы о спорте</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['pupil/article', 'id' => 'Интересные факты из мира спорта']); ?>">Интересные факты из мира спорта</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['table/table', 'id' => 5]); ?>">Расписание</a></p>
-                </address>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
-                <h3 class="text-uppercase mb-3">Родителям</h3>
-                <address class="mb-0">
-                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Классный руководитель']); ?>">Классный руководитель</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['parent/index', 'id' => 'Классный руководитель']); ?>">Дни рождения</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Новости класса']); ?>">Новости класса</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['portfolio/portfolio', 'name' => 'Портфолио класса']); ?>">Портфолио класса</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'Родительские собрания']); ?>">Родительские собрания</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['parent/article', 'id' => 'План работы']); ?>">План работы</a></p>
-                </address>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
-                <h3 class="text-uppercase mb-3"> Педагогам</h3>
-                <address class="mb-0">
-                    <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Уроки']); ?>">Уроки</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'Внеклассная работа']); ?>">Внеклассная работа</a></p>
-                    <p class="mt-3"><a href="<?php echo Url::to(['teacher/article', 'id' => 'ФГОС материалы']); ?>">ФГОС материалы</a></p>
-                </address>
-            </div>
-        </div>
     </div>
     <div class="copyright pb-5 text-center">
         <p><?php echo $template[0]['copyright']; ?></p>
@@ -185,7 +187,7 @@ $template = Template::find()->all();
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <img class="img-fluid" src="" alt="test">
+        <img style="image-orientation: from-image;" class="img-fluid" src="" alt="test">
     </div>
 </div>
 </div>

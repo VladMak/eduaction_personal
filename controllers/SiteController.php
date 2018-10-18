@@ -12,51 +12,16 @@ use app\models\ContactForm;
 use app\models\SiteModel;
 use yii\helpers\Url;
 use app\models\PortfolioModel;
+use app\models\News;
+
+/*
+Добавить даты и подписи к грамотам и фото
+Страница Дни рождения переименовать (Фамилия Имя и дата рождения)
+
+*/
 
 class SiteController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout'],
-                'rules' => [
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-        ];
-    }
-
     /**
      * Displays homepage.
      *
@@ -64,79 +29,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        /*
-        Свежие новости: дату добавить
-        Новости еще должны раскрываться, попробовать через Vue
-        */
-        return $this->render('index');
-    }
-
-    /**
-     * Login action.
-     *
-     * @return Response|string
-     */
-    public function actionLogin()
-    {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-
-        $model->password = '';
-        return $this->render('login', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Logout action.
-     *
-     * @return Response
-     */
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-
-        return $this->goHome();
-    }
-
-    /**
-     * Displays contact page.
-     *
-     * @return Response|string
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionPortfolio()
-    {
-        $main_nav = new SiteModel();
-        $id = 0;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
+        $news = array_slice(News::find()->all(), -10, 10);
+        $slider_path = Url::to('images\slider');
+        $slider = scandir(Url::to('images\slider'));
+        return $this->render('index', [
+            'news' => $news,
+            'slider_path' => $slider_path,
+            'slider' => $slider,
         ]);
     }
 
@@ -152,15 +51,7 @@ class SiteController extends Controller
         ]);
     }
 
-    /*
-    https://www.gto.ru/
-    Что такое ГТО
-    Что я должен уметь
-    Как статьи сделать
-    И ещё нормативы по ступеням
-    Вот все с этого сайта можно взять
-    Кстати этот сайт можно в ссылки затолкать)
-    */
+   
     public function actionGto()
     {
         $main_nav = new SiteModel();
@@ -170,89 +61,6 @@ class SiteController extends Controller
         return $this->render('gto');
     }
 
-    public function actionClassruk()
-    {
-        $main_nav = new SiteModel();
-        $id = 3;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
-    }
-
-    public function actionVneklrab()
-    {
-        $main_nav = new SiteModel();
-        $id = 4;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
-    }
-
-    public function actionNpb($id = 'npb')
-    {
-        $main_nav = new SiteModel();
-        $id = 5;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
-    }
-
-    public function actionWhy($id = 'why')
-    {
-        $main_nav = new SiteModel();
-        $id = 6;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
-    }
-
-    public function actionDoc($id = 'doc')
-    {
-        $main_nav = new SiteModel();
-        $id = 7;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
-    }
-
-    public function actionTech($id = 'tech')
-    {
-        $main_nav = new SiteModel();
-        $id = 8;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
-    }
-
-    public function actionPolicy($id = 'policy')
-    {
-        $main_nav = new SiteModel();
-        $id = 9;
-        $name = $main_nav->getName($id);
-        $content = $main_nav->getContent($id);
-        return $this->render('page', [
-            'name' => $name,
-            'content' => $content,
-        ]);
-    }
 
     public function actionAbout($name){
         $model = new PortfolioModel();
@@ -263,6 +71,8 @@ class SiteController extends Controller
             'name' => 'Обо мне',
             'content' => $content,
             'img' => $img,
+            'photos' => $photos,
+            'path' => $path,
         ]);
     }
 }

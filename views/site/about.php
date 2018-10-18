@@ -39,3 +39,34 @@ use yii\helpers\Url;
 		</div>
 	</div>
 </section>
+
+<section class="about py-5">
+	<div class="container gallery-container">
+
+		<div class="tz-gallery">
+			<h4>Курсы повышения квалификации</h4>
+			<div class="row">
+
+				<?php
+				for($i = 2; $i < count($photos); $i++) {
+				?>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<a class="lightbox">
+							<img style="image-orientation: from-image; object-fit: contain; height: 400px;" src="<?php echo Url::base() . '/' . $path . '/' . $photos[$i];  ?>" alt="Park">
+							<?php
+							echo exif_imagetype(Url::base() . '/' . $path . '/' . $photos[$i]);
+							?>
+						</a>
+					</div>
+				</div>
+				<?php
+				}
+				?>
+
+
+			</div>
+
+		</div>
+	</div>
+</section>
