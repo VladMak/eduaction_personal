@@ -74,12 +74,12 @@ jQuery(document).ready(function($){
 	function checkWindowWidth() {
 		//check window width (scrollbar included)
 		var e = window, 
-            a = 'inner';
-        if (!('innerWidth' in window )) {
-            a = 'client';
-            e = document.documentElement || document.body;
-        }
-        if ( e[ a+'Width' ] >= MqL ) {
+		a = 'inner';
+		if (!('innerWidth' in window )) {
+			a = 'client';
+			e = document.documentElement || document.body;
+		}
+		if ( e[ a+'Width' ] >= MqL ) {
 			return true;
 		} else {
 			return false;
@@ -88,8 +88,8 @@ jQuery(document).ready(function($){
 
 	function moveNavigation(){
 		var navigation = $('.cd-nav');
-  		var desktop = checkWindowWidth();
-        if ( desktop ) {
+		var desktop = checkWindowWidth();
+		if ( desktop ) {
 			navigation.detach();
 			navigation.insertBefore('.cd-header-buttons');
 		} else {
@@ -101,18 +101,27 @@ jQuery(document).ready(function($){
 
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:30,
-    responsiveClass:true,
-    loop: true,
-    items: 3,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true
+	loop:true,
+	margin:30,
+	responsiveClass:true,
+	loop: true,
+	items: 3,
+	autoplay: true,
+	autoplayTimeout: 3000,
+	autoplayHoverPause: true
 });
 
+var footerLinks = document.getElementsByClassName('img_links_footer');
+
+for(var i = 0; i < footerLinks.length; i++){
+	footerLinks[i].addEventListener('click', function(){
+		document.location.href = this.getAttribute('data-src');
+	});
+}
+
+
+
 $('img').click(function(){
-	console.log($('#exampleModalLong img'));
 	$('#exampleModalLong').modal('show');
 	$('#exampleModalLong img')[0].src = this.src;
 });

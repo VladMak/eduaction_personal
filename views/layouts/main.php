@@ -162,14 +162,14 @@ $template = Template::find()->all();
                         <a href="http://ustkudaschool.ru/">МОУ ИРМО Усть-Кудинская СОШ</a>
                     </p>
                     <p>
-                        <a href="https://dnevnik.ru/"><img style="width: 150px" src="https://static.dnevnik.ru/img/logotypes/logotype.png"></a>
+                        <a href="#"><img class="img_links_footer" data-src="https://dnevnik.ru/" style="width: 150px" src="https://static.dnevnik.ru/img/logotypes/logotype.png"></a>
                     </p>
                     <p>
-                        <a href="http://www.iro38.ru/"><img style="width: 300px" src="http://www.iro38.ru/templates/shablon/images/logotext.png"></a>
+                        <a href="#"><img class="img_links_footer" data-src="http://www.iro38.ru/" style="width: 300px" src="http://www.iro38.ru/templates/shablon/images/logotext.png"></a>
                     </p>
                     <p>
-                        <a href="https://www.gto.ru/">
-                            <img style="width: 100px;" src="https://www.gto.ru/bundles/gtofront/img/logo-h4.png">
+                        <a href="#">
+                            <img class="img_links_footer" data-src="https://www.gto.ru" style="width: 100px;" src="https://www.gto.ru/bundles/gtofront/img/logo-h4.png">
                         </a>
                     </p>
                 </ul>

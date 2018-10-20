@@ -12,7 +12,8 @@ class PortfolioModel extends Model
         $portDir = [
             'Портфолио' => 'main',
             'Обо мне' => 'about',
-            'Наши достижения' => 'nashi_dostig'
+            'Наши достижения' => 'nashi_dostig',
+            'Портфолио класса' => 'portfolio_klassa'
         ];
         $masDir = scandir(Url::to('images\portfolio'));
         
